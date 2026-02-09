@@ -1,0 +1,76 @@
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 16px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* 学习库 */
+.library {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    width: 260px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* 弹窗遮罩 */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 999;
+}
+
+/* 弹窗主体 */
+.modal-content {
+    width: 95%;
+    height: 90vh;
+    background: white;
+    margin: 5vh auto;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 关闭按钮 */
+.close {
+    align-self: flex-end;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* 核心：模型占据主要空间 */
+.model-viewer-container {
+    flex: 1;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* 提示文字 */
+.tip {
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+    margin: 6px 0 0;
+}
